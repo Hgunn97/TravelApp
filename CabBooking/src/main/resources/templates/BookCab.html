@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cab Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form action="bookCab" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Book a Cab</legend>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="emailId">Email</label>
+            <div class="col-md-4">
+                <input id="emailId" name="emailId" type="text" class="form-control input-md">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="fromLocation">From Location</label>
+            <div class="col-md-4">
+                <input id="fromLocation" name="fromLocation" type="text" class="form-control input-md">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="toLocation">To Location</label>
+            <div class="col-md-4">
+                <input id="toLocation" name="toLocation" type="text" class="form-control input-md">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="typeOfCab">Type Of Cab</label>
+            <div class="col-md-4">
+                <select id="typeOfCab" name="typeOfCab" class="form-control">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="reset"></label>
+            <div class="col-md-8">
+                <button id="reset" name="reset" class="btn btn-danger">Reset</button>
+                <button id="submit" name="submit" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<hr/>
+<a href="/"><- Index Page</a>
+</body>
+</html>

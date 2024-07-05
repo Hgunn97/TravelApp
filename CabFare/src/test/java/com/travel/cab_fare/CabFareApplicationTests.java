@@ -1,10 +1,10 @@
-package com.travel.cabbooking;
+package com.travel.cab_fare;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CabBookingApplicationTests {
+class CabFareApplicationTests {
 
     @Test
     void contextLoads() {
